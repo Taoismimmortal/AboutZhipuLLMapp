@@ -14,10 +14,6 @@ import os
 sys.path.append("/notebook/C3 搭建知识库") # 将父目录放入系统路径中
 _ = load_dotenv(find_dotenv()) 
 
-
-
-
-
 ####################
 def generate_response(input_text,zhipu_api_key):
     llm=ZhipuAILLM(model = "glm-4", temperature = 0.1, api_key = zhipu_api_key) 
